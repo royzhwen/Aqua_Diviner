@@ -1,0 +1,115 @@
+<resources>
+    <!--Titles-->
+    <string name="app_name">Aqua Diviner</string>
+    <string name="title_MainPage_SplashScreen">Calculating...</string>
+    <string name="title_InputParams">Input Parameters</string>
+    <string name="title_InputParams_advanced">Input Parameters - Advanced</string>
+    <string name="title_InputCalendar">Calendar</string>
+    <string name="title_InputValves">Valves and Meters</string>
+
+    <!--Generic-->
+    <string name="edittext_enter_data">0.0</string>
+    <string name="button_save_data">Save Data</string>
+    <string name="message_saved">Your data has been saved</string>
+
+    <!--Terms and conditions-->
+    <string name="toc_Title">TERMS &amp; CONDITIONS</string>
+    <string name="toc_Title_text">
+        Please read and agree to these terms and conditions of use carefully prior to accessing any materials, information, products or services.\n\n
+    </string>
+    <string name="toc_DEFINITIONS">DEFINITIONS</string>
+    <string name="toc_DEFINITIONS_text">
+        <b>“Affiliate”</b> of a company means any person or other entity directly or indirectly controlling, controlled by, or under common control of such company.\n\n
+        <b>“Aqua Diviner”</b> refers to the engineering team that developed the software or application at the University of Waterloo, ON, Canada.\n\n
+        <b>“Program”</b> refers to the Aqua Diviner software (mobile or computer application).\n\n
+        <b>“User”</b> refers to any persons using the software, both authorized and unauthorized.\n\n
+        <b>“SAGD”</b> Steam Assisted Gravity Drainage, a type of well used in the production of oil.\n\n
+        <b>“Device”</b> refers to hardware (physical or virtual) capable of running software.\n\n
+    </string>
+    <string name="toc_USE">USE</string>
+    <string name="toc_USE_text">
+        Unauthorized use of the Program is not permitted, use of the Program constitutes agreement to the terms and conditions. Agreement with the terms and conditions is a requirement of authorized use.\n\n
+    </string>
+    <string name="toc_SUPPORT">SUPPORT</string>
+    <string name="toc_SUPPORT_text">
+        Aqua Diviner provides the Program ‘as is’ and does guarantee any form of technical support. Including, without limitation, (i) telephone, e-mail or web-based support respecting the use of the Program (ii) program releases or corrections.\n\n\
+        Aqua Diviner reserves the right to automatically install updates on the User’s Device.\n\n
+    </string>
+    <string name="toc_INDEMNIFICATION">INDEMNIFICATION</string>
+    <string name="toc_INDEMNIFICATION_text">
+        To the maximum extent permitted by law, the User agrees to defend and, indemnify and hold harmless Aqua Diviner and its Affiliates from and against any and all third party claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages costs and expenses (including solicitor fees) arising out of or accruing from the use to the Program.\n\n
+    </string>
+    <string name="toc_LIABILITY">LIABILITY</string>
+    <string name="toc_LIABILITY_text">
+        To the maximum extent permitted by law. In no event shall Aqua Diviner or its Affiliates be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the Program, even if Aqua Diviner has been advised of the possibility of such damages. The Program is solely an educational tool to provide the User limited information on steam behavior. It requires considerable skill and judgment to utilize the Program or interpret its results. The Program is not a substitute for engineering training, intuition, and safe practices, nor is the Program intended to provide any information beyond its educational purpose.\n\n
+    </string>
+    <string name="toc_DISCLAIMER">DISCLAIMER</string>
+    <string name="toc_DISCLAIMER_text">
+        Considerable time, effort and expense have gone into the development of the Program, and it has been tested for defects. However, no warranty is made on its accuracy or reliability. It is the responsibility of the User to verify the results obtained from the Program. In the event the Program is found to be defective Aqua Diviner has no obligation to remedy the defect. Aqua Diviner will in no way have obligations or liabilities for incidental or consequential damages associated with the use of the Program. No other warranty is made.\n\n
+    </string>
+    <string name="toc_COPYRIGHT">COPYRIGHT</string>
+    <string name="toc_COPYRIGHT_text">
+        The Program is owned by Aqua Diviner and is protected by Canadian copyright laws and international treaty provisions. Therefore, the User must treat the Program like any other copyrighted material (e.g., a book or musical recording) except that User may either make one (1) copy of the Program solely for backup or archival purposes, or transfer the Program to a single hard disk, provided the User keeps the original solely for backup or archival purposes. The User may not copy any written materials accompanying or associated with the Program without prior written authorization from Aqua Diviner.\n\n
+        Accessing the source code of the Program and/or reverse engineering of the Program is strictly prohibited.\n\n
+    </string>
+    <string name="toc_MISCELLANEOUS">MISCELLANEOUS</string>
+    <string name="toc_MISCELLANEOUS_text">
+        All notices required in this Agreement will be given in writing to all parties and delivered by registered air mail, international air courier, facsimile, or mutually agreed equivalent. Notices will be effective when received as indicated on the facsimile, registered mail or other mutually agreeable delivery receipt.\n\n
+        The parties have required that this Agreement and all documents relating thereto be drawn up in English.\n\n
+    </string>
+    <string name="radio_accept">I agree with the Terms &amp; Conditions as stated above</string>
+    <string name="button_continue">Continue to Aqua Diviner</string>
+
+    <!--For main page-->
+    <string name="editText_tStart">Tsolve (day)</string>
+    <string name="edittext_enter_tstart">10</string>
+    <string name="displayVolumetricFlowrate">Volumetric Flow Rate: %1$s m³/hr</string>
+    <string name="displayPressure">Pressure: %1$s MPa</string>
+    <string name="displayTemperature">Temperature: %1$s &#x2103;</string>
+    <string name="displayEnthalpy">Enthalpy: %1$s KJ/kg</string>
+    <string name="displayQuality">Quality: %1$s</string>
+    <string name="button_calendar">Calendar</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="button_input_parameters">Input Parameters</string>
+    <string name="message_please_agree">You must agree to the Terms &amp; Conditions to continue</string>
+    <string name="message_tsolve_range">Tsolve must be between 10 and 100</string>
+    <string name="message_calculation_fail_missing_data">Calculation failed due to missing output data</string>
+    <string name="message_errorCalc_input_unsaved">Please properly specify and save all the inputs first</string>
+    <string name="message_errorCalc_internal">Calculaton failed due to internal error</string>
+
+    <!--For Calendar page-->
+    <string name="button_view_parameters">View Parameters</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_save">Save</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_clear_all">Clear All</string>
+    <string name="message_please_specify">Please specify a date range first</string>
+    <string name="message_please_select">Please finish selecting the date ranges</string>
+
+    <!--For Valves and meters page-->
+    <string name="labelPressure">Pressure</string>
+    <string name="labelFlowRate">FlowRate</string>
+    <string name="labelValue">%1$s %2$s</string>
+    <string name="button_update_parameters">Update Parameters</string>
+    <string name="message_parameters">Your parameters have been updated</string>
+    <string name="message_Pressure_limits">The pressure must be between 0.5 to 6 MPa</string>
+    <string name="message_FlowRate_limits">The flow rate must be between 0 to 12 m³/hr</string>
+
+    <!--For InputParams page-->
+    <string name="editText_TVD">TVD (m)</string>
+    <string name="editText_SurfaceCasing">Surface Casing (m)</string>
+    <string name="editText_IntermediateCasing">Intermediate Casing (m)</string>
+    <string name="editText_SlottedLiner">Slotted Liner (m)</string>
+    <string name="editText_WellLength">Well Length (m)</string>
+    <string name="displayTVD">TVD: %1$s m</string>
+    <string name="displaySurfaceCasing">Surface Casing: %1$s m</string>
+    <string name="displayIntermediateCasing">Intermediate Casing: %1$s m</string>
+    <string name="displaySlottedLiner">Slotted Liner: %1$s m</string>
+    <string name="displayWellLength">Well Length: %1$s m</string>
+    <string name="button_advanced_params">Advanced Parameters</string>
+    <string name="message_TVD_limits">The TVD must be between 0 to 500m</string>
+    <string name="message_SurfaceCasing_limits">The Surface Casing must be between 0 to 150m</string>
+    <string name="message_IntermediateCasing_limits">The Intermediate Casing must be between 0 to 800m</string>
+    <string name="message_SlottedLiner_limits">The Slotted Liner must be between 0 to 1200m</string>
+    <string name="message_WellLength_limits">The Well Length must be between 0 to 2000m</string>
+</resources>

@@ -1,0 +1,27 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion 23
+        buildToolsVersion "23.0.3"
+        defaultConfig {
+            applicationId "com.example.owner.wellcalculator"
+            minSdkVersion.apiLevel 8
+            targetSdkVersion.apiLevel 23
+            versionCode 1
+            versionName "1.0"
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles.add(file("proguard-rules.pro"))
+            }
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}

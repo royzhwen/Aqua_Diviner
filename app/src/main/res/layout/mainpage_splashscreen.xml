@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Using to Glide API, the width and height of animated GIF don't actually change from config change-->
+    <ImageView
+        android:id="@+id/loading_anim"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:layout_centerInParent="true"
+        android:layout_width="1024dp"
+        android:layout_height="1024dp"
+        android:src="@drawable/loading_edited" />
+</RelativeLayout>

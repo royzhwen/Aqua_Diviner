@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:id="@+id/inputcalendar">
+
+    <!--Buttons are created programmatically now, this was for initial testing-->
+    <!--Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+        android:layout_column="9"
+        android:text="DISPLAY" /-->
+
+</TableLayout>

@@ -1,0 +1,26 @@
+﻿TVD,100,300,500,m
+Length,1000,1500,3000,m
+Surface_Casing,0,100,200,m
+Intermediate_Casing,0,600,1000,m
+Slotted_Liner,500,800,1500,m
+ID_InnerTubing,0,0.1257,0.25,m
+OD_InnerTubing,0,0.1397,0.25,m
+ID_OuterTubing,0,0.2553,0.5,m
+OD_OuterTubing,0,0.2731,0.5,m
+ID_IntermediateCasing,0,0.3179,0.6,m
+OD_IntermediateCasing,0,0.3397,0.6,m
+OD_ProductionCement,0,0.444,0.75,m
+ID_SurfaceCasing,0,0.451,0.75,m
+OD_SurfaceCasing,0,0.4731,0.75,m
+OD_SurfaceCement,0,0.66,1,m
+ID_LowerTubing,0,0.1006,0.25,m
+OD_LowerTubing,0,0.1143,0.25,m
+ID_SlottedLiner,0,0.2244,0.5,m
+OD_SlottedLiner,0,0.2445,0.5,m
+Steel,0,50,100,W/k
+ClassGCement,0,0.86,20,W/k
+Soil,0,2.3,50,W/k
+SoilDry,0,0.5,50,W/k
+Sand,0,1.8,50,W/k
+Formation_Temp,0,293,400,W/k
+Mass fraction of water returned,0.5,0.5,1,

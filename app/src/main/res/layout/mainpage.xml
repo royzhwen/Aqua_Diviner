@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".app.MainPage"
+    android:focusableInTouchMode="true">
+    <ImageView
+        android:id="@+id/wellimage"
+        android:adjustViewBounds="true"
+        android:layout_width="810dp"
+        android:layout_height="456dp"
+        android:src="@drawable/well" />
+
+    <TextView
+        android:id="@+id/label_tsolve"
+        android:layout_below="@+id/wellimage"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:text="@string/editText_tStart"/>
+    <EditText
+        android:id="@+id/input_tsolve"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label_tsolve"
+        android:layout_marginLeft="100dp"
+        android:paddingLeft="130dp"
+        android:ems="10"
+        android:text="@string/edittext_enter_tstart"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/display_VolumetricFlowrate"
+        android:layout_below="@+id/input_tsolve"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:text="@string/displayVolumetricFlowrate"/>
+
+    <TextView
+        android:id="@+id/debugText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/outputs"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@layout/mainpage_outputborder"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        tools:context=".app.MainPage">
+        <TextView
+            android:id="@+id/pressureTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/displayPressure" />
+        <TextView
+            android:id="@+id/temperatureTV"
+            android:layout_below="@id/pressureTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/displayTemperature" />
+        <TextView
+            android:id="@+id/enthalpyTV"
+            android:layout_below="@id/temperatureTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/displayEnthalpy" />
+        <TextView
+            android:id="@+id/qualityTV"
+            android:layout_below="@id/enthalpyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/displayQuality" />
+        <!--Old textviews for coordinate display-->
+        <!--TextView
+            android:id="@+id/xPos"
+            android:layout_below="@id/temperatureTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="xPos: 0" />
+        <TextView
+            android:id="@+id/yPos"
+            android:layout_below="@id/enthalpyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="yPos: 0" /-->
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttons"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="120dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="40dp"
+        tools:context=".app.MainPage"><!--alignParentRight and marginRight are used for older APIs-->
+        <Button android:id="@+id/calendar"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/button_calendar"
+            android:onClick="goToCalendar"/>
+        <Button android:id="@+id/well_parameters"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/button_input_parameters"
+            android:onClick="goToParams"/>
+        <Button android:id="@+id/calculate"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="120dp"
+            android:layout_below="@+id/well_parameters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/button_calculate"
+            android:onClick="calculate"/>
+    </RelativeLayout>
+</RelativeLayout>

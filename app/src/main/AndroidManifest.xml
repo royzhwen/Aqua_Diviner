@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.owner.wellcalculator">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".app.MainPage"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.MainPage_CalculateScreen"
+            android:label="@string/title_MainPage_SplashScreen"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".app.MainPage" />
+        </activity>
+        <activity
+            android:name=".app.InputParams"
+            android:label="@string/title_InputParams"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".app.MainPage" />
+        </activity>
+        <activity
+            android:name=".app.InputParamsAdv"
+            android:label="@string/title_InputParams_advanced"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".app.InputParams" />
+        </activity>
+        <activity
+            android:name=".app.InputCalendar"
+            android:label="@string/title_InputCalendar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".app.MainPage" />
+        </activity>
+        <activity
+            android:name=".app.InputValves"
+            android:label="@string/title_InputValves"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".app.InputCalendar" />
+        </activity>
+    </application>
+
+</manifest>

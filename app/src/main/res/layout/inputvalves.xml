@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".app.InputValves"
+    android:id="@+id/inputs"><!--Match parent here allows background to be all white-->
+
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"-->
+
+
+
+    <TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:textColor="@android:color/black"
+    android:layout_height="wrap_content"
+    android:text=""/><!--Only used for testing now-->
+
+    <!--Originally, text boxes were used instead of valves to display values-->
+    <!--EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:textColor="@android:color/black"
+        android:ems="10"
+        android:text="@string/edittext_enter_data"
+        android:layout_below="@id/textView1"
+
+        android:inputType="numberDecimal|numberSigned">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:text="Flow Rate"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:textColor="@android:color/black"
+        android:ems="10"
+        android:text="@string/edittext_enter_data"
+        android:layout_below="@id/textView2"
+
+        android:inputType="numberDecimal|numberSigned">
+        <requestFocus />
+    </EditText-->
+
+    <TextView
+        android:id="@+id/textPressure"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="24sp"
+        android:text="@string/labelPressure"/>
+
+    <TextView
+        android:id="@+id/textFlowRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/textPressure"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="235dp"
+        android:textSize="24sp"
+        android:text="@string/labelFlowRate"/>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_pressure"
+        android:layout_below="@id/textPressure"
+        android:layout_marginLeft="70dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"><!--Margin left is TEMPORARY-->
+
+        <ImageView
+            android:id="@+id/meter_needle_pressure"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="matrix"
+            android:src="@drawable/meter_needle" /><!--Actual image is 300dp x 300dp (1.5*200=300)-->
+
+        <ImageView
+            android:id="@+id/meter_pressure"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/meter_pressure" />
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_flowrate"
+        android:layout_below="@id/textFlowRate"
+        android:layout_toRightOf="@+id/frame_pressure"
+        android:layout_marginLeft="130dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"><!--Margin left is TEMPORARY-->
+
+        <ImageView
+            android:id="@+id/meter_needle_flowrate"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="matrix"
+            android:src="@drawable/meter_needle" /><!--Actual image is 300dp x 300dp (1.5*200=300)-->
+
+        <ImageView
+            android:id="@+id/meter_flowrate"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/meter_flowrate" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/numericPressure"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame_pressure"/>
+
+    <TextView
+        android:id="@+id/numericFlowRate"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@id/frame_flowrate"
+        android:layout_toRightOf="@+id/numericPressure"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/valve_pressure"
+        android:layout_width="333dp"
+        android:layout_height="333dp"
+        android:layout_below="@id/numericPressure"
+        android:scaleType="matrix"
+        android:src="@drawable/valve" /><!--android:layout_below="@id/editText2"-->
+
+    <ImageView
+        android:id="@+id/valve_flowrate"
+        android:layout_width="333dp"
+        android:layout_height="333dp"
+        android:layout_toRightOf="@id/valve_pressure"
+        android:scaleType="matrix"
+        android:src="@drawable/valve"
+        android:layout_alignTop="@+id/valve_pressure" /><!--android:layout_below="@id/editText2"-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_update_parameters"
+        android:layout_below="@id/valve_pressure"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="215dp"
+        android:textSize="24sp"
+        android:onClick="save"/><!--android:layout_marginTop="150dp"-->
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toc_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_Title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_Title_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_DEFINITIONS"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_DEFINITIONS_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_USE"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_USE_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_SUPPORT"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_SUPPORT_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_INDEMNIFICATION"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_INDEMNIFICATION_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_LIABILITY"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_LIABILITY_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_DISCLAIMER"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_DISCLAIMER_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_COPYRIGHT"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_COPYRIGHT_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_MISCELLANEOUS"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toc_MISCELLANEOUS_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/radio_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_accept"
+            android:checked="false"/>
+
+        <Button android:id="@+id/button_continue"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_continue" />
+
+    </LinearLayout>
+</ScrollView>
